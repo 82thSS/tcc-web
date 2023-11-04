@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header
+  {
+    background-color: white;
+    display: flex;
+    height: 12vh;
+    overflow-y: hidden;
+    margin: auto;
+  }
+
+  #header_button_group
+  {
+    margin: auto 5vw auto auto;
+  }
+
+  #header_button
+  {
+    background-color: white;
+    border-color: transparent;
+    font-size: 1.4vw;
+    padding-bottom: 1.2vh;
+    padding-top: 1.2vh;
+    transition: .4s;
+    border-left: .15vw solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    cursor: pointer;
+  }
+
+  #header_button:hover
+  {
+    border-bottom: .15vw solid black;
+  }
+
+  #header_twitter:hover
+  {
+    border-bottom: 2px solid black;
+  }
+
+  #rogo
+  {
+    text-align: center;
+    margin: auto auto auto 5vw;
+  }
+
+  #background
+  {
+    background-image: url("ホーム背景.png");
+  }
+
+  #explan
+  {
+    border: solid .4vw #4a4a4a;
+    box-shadow: .5vw .5vw .25vw;
+    margin: 4vh auto 8vh auto;
+    width: 64vw;
+    background-color: white;
+    padding: 2vw;
+  }
+
+  #explan_title
+  {
+    margin-bottom: 4vh;
+  }
+
+  #explan_text
+  {
+    line-height: 8vh;
+    font-size: 1.5vw;
+  }
+
+  #explan_img
+  {
+    margin: auto 4vw auto 0;
+    text-align: center;
+  }
+
+  h1
+  {
+    padding: 2vh 1vw;
+    border-left: 2px solid;
+    margin: 4vh auto 2vh 0px;
+  }
+
+  footer
+  {
+    height: 40vh;
+    background-color: #404040;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+  }
+
+  #footer_rogo
+  {
+    display: block;
+    margin: auto 5vw;
+  }
+
+  #footer_text
+  {
+    margin: auto 4vw auto 8vw;
+    font-size: 1.2vw;
+  }
+
+  a
+  {
+    color: white;
+  }
+
+  #footer_copyright
+  {
+    font-size: 1vw;
+    text-align: right;
+    margin: auto 1vw 1vh auto;
+  }
+</style>
+
+<script>
+  function home()
+  {
+    window.location.href="https://tcc-home.netlify.app"
+  }
+
+  function naiyou()
+  {
+    window.location.href="https://tcc-activity.netlify.app"
+  }
+
+  function sakuhin()
+  {
+    window.location.href="https://tcc-works.netlify.app"
+  }
+
+  function oshirase()
+  {
+    window.location.href="https://tcc-announcement.netlify.app"
+  }
+</script>
+
+<body>
+    <header>
+      <img src="tccロゴ.png" width="150vw" height="auto" id="rogo">
+      <div id="header_button_group">
+        <input type="submit" value="ホーム" id="header_button" onclick="home()">
+        <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
+        <input type="submit" value="作品" id="header_button" onclick="sakuhin()">
+        <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
+      </div>
+    </header>
+</body>
+
+<div id="background">
+
+<body>
+  <div id="explan">
+    <img src="活動内容素材_サウンド班.png" width="50%" height="auto id="explan_title">
+    <h1>概要</h1>
+    <p id="explan_text">この班は主にDTMで作曲などを行います。
+    <br>作曲に限らず、リミックスやアレンジなども行います。
+    <br>
+    <br>サウンド班は班員の数がそれなりにいるので、
+    <br>先輩たちから色々なアドバイスを聞くことができます。
+    </p>
+    <br>
+    <h1>制作環境</h1>
+    <p id="explan_text">部室にはハイスペックなPCが並んでいるのに加え、
+    <br>音質はアレですがヘッドフォン、スピーカーもあります。
+    <br>
+    <br>主に使用しているツールは
+    <br>・Cubase : DTMソフトでトップの人気を誇っているソフト
+    <br>・FL Studio : 画面の見やすさに定評があるソフト
+    <br>・Studio One : 動作が軽いと言われているソフト
+    <br>・Cake Walk : 基本的なことが無料でできるソフト
+    <br>等ですが、部員それぞれが使いやすいソフトを集計して
+    <br>順次追加していくつもりです。
+    </p>
+    <br><br>
+    <div>
+      <img src="Cubaseアイコン.png" width="30%" height="auto" id="explan_img">
+      <img src="FL Studioアイコン.png" width="30%" height="auto" id="explan_img">
+      <img src="Studio Oneアイコン.png" width="30%" height="auto" id="explan_img">
+      <img src="Cake Walkアイコン.png" width="30%" height="auto" id="explan_img">
+    </div>
+    <br>
+    <h1>桐朋祭では？</h1>
+    <p id="explan_text">毎年6月に行われる桐朋の文化祭「桐朋祭」では、
+    <br>例年数学教室にて部員が制作した曲を部屋のバックグラウンドで再生します。
+    <br>毎年展示されている作品は異なるので、期間限定で聴ける
+    <br>コンテンツのようなものだと思ってもらえれば結構です。
+    <br>
+    <br>毎年コンピューター部は来場者のアンケートで上位にランクイン
+    <br>できていないのでお越しくださった時はぜひ我らコンピューター部に
+    <br>投票して頂けると嬉しいです。
+    </p>
+  </div>
+</body>
+
+<body>
+    <footer>
+      <img src="フッター素材.png" width="auto" height="24%" id="footer_rogo">
+      <div id="footer_text">
+        <p>住所：東京都国立市中3-1-10 
+        <br>@コンピューター部器具庫
+        <br><a href="https://twitter.com/tcca_main" target="_blank">TCC公式Twitter</a>
+      </div>
+      <div id="footer_text">
+        <p>背景画像提供：<a href="https://sozaino.site/" target="_blank">OKUMONO</a>
+        <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>
+        <br>サイト管理者：82th.S.S</p>
+      </div>
+      <p id="footer_copyright">CopyRight© 桐朋コンピューター部
+      <br>CopyRight© TOHO_Computer_Club</p>
+    </footer>
+  </body>

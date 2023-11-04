@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  a
+  {
+    cursor: pointer;
+  }
+
+  header
+  {
+    background-color: white;
+    display: flex;
+    height: 12vh;
+    overflow-y: hidden;
+    margin: auto;
+  }
+
+  #header_button_group
+  {
+    margin: auto 5vw auto auto;
+  }
+
+  #header_button
+  {
+    background-color: white;
+    border-color: transparent;
+    font-size: 1.4vw;
+    padding-bottom: 1.2vh;
+    padding-top: 1.2vh;
+    transition: .4s;
+    border-left: .15vw solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    cursor: pointer;
+  }
+
+  #header_button:hover
+  {
+    border-bottom: .15vw solid black;
+  }
+
+  #header_button_naiyou
+  {
+    background-color: white;
+    border-color: transparent;
+    font-size: 1.4vw;
+    padding-bottom: 1.2vh;
+    padding-top: 1.2vh;
+    transition: .4s;
+    border-left: .15vw solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    cursor: pointer;
+    border-bottom: .15vw solid black;
+  }
+
+  #rogo
+  {
+    text-align: center;
+    margin: auto auto auto 5vw;
+  }
+
+  #background
+  {
+    background-image: url("./images/背景.png");
+    padding: 4vh 0;
+  }
+
+  #han_group
+  {
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    display: flex;
+    margin: 4vh 12vw 4vh 12vw;
+    background-color: white;
+    transition: .4s;
+    cursor: pointer;
+  }
+
+  #han_group:hover
+  {
+    transform: scale(1.05,1.05);
+  }
+
+  #han_img_left
+  {
+    border-right: solid .4vw #4a4a4a;
+  }
+
+  #han_img_right
+  {
+    border-left: solid .4vw #4a4a4a;
+  }
+
+  #han_txt_group
+  {
+    text-align: center;
+    margin: auto;
+  }
+
+  #han_title
+  {
+    margin: 0px auto 0px auto;
+  }
+
+  #han_txt
+  {
+    text-align: center;
+    font-size: 1.5vw;
+  }
+
+  footer
+  {
+    height: 40vh;
+    background-color: #404040;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+  }
+
+  #footer_rogo
+  {
+    display: block;
+    margin: auto 5vw;
+  }
+
+  #footer_text
+  {
+    margin: auto 4vw auto 8vw;
+    font-size: 1.2vw;
+  }
+
+  a
+  {
+    color: white;
+  }
+
+  #footer_copyright
+  {
+    font-size: 1vw;
+    text-align: right;
+    margin: auto 1vw 1vh auto;
+  }
+</style>
+
+<script>
+  function home()
+  {
+    window.location.href="index.html"
+  }
+
+  function naiyou()
+  {
+    window.location.href="activities.html"
+  }
+
+  function sakuhin()
+  {
+    window.location.href="works.html"
+  }
+
+  function oshirase()
+  {
+    window.location.href="info.html"
+  }
+
+  function han_proglamming()
+  {
+    window.location.href="programming.html";
+  }
+
+  function han_sound()
+  {
+    window.location.href="sound.html";
+  }
+
+  function han_graphic()
+  {
+    window.location.href="graphic.html";
+  }
+</script>
+
+<body>
+  <header>
+    <img src="./images/tccロゴ.png" width="150vw" height="auto" id="rogo">
+    <div id="header_button_group">
+      <input type="submit" value="ホーム" id="header_button" onclick="home()">
+      <input type="submit" value="活動内容" id="header_button_naiyou" onclick="naiyou()">
+      <input type="submit" value="作品" id="header_button" onclick="sakuhin()">
+      <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
+    </div>
+  </header>
+</body>
+
+<div id="background">
+
+<div id="han_group" onclick="han_proglamming()">
+  <img src="./images/プログラミング班.png" width="50%" height="auto" id="han_img_left">
+  <div id="han_txt_group">
+    <img src="./images/activities/活動内容素材_プログラミング班.png" width="70%" height="70%" id="han_title">
+    <p id="han_txt">この班は主にゲームやソフトウェアなどのプログラミングを行います。
+    <br>PythonやC#を始め、C++やJavaScriptなど幅広い言語を扱っています。
+    <br>桐朋祭では、例年部員が作成したゲームを展示しており
+    <br>誰でもプレイすることができます。
+    </p>
+  </div>
+</div>
+
+<div id="han_group" onclick="han_sound()">
+  <div id="han_txt_group">
+    <img src="./images/activities/活動内容素材_サウンド班.png" width="50%" height="auto" id="han_title">
+    <p id="han_txt">この班は主にDTMで作曲などを行います。
+    <br>作曲に限らず、リミックスやアレンジなども行います。
+    <br>桐朋祭では、例年部員が作った曲を展示部屋の
+    <br>バックグラウンドとしてスピーカーで再生します。
+    </p>
+  </div>
+  <img src="./images/サウンド班.png" width="34%" height="auto" id="han_img_right">
+</div>
+
+<div id="han_group" onclick="han_graphic()">
+  <img src="./images/グラフィック班.png" width="45%" height="auto" id="han_img_left">
+  <div id="han_txt_group">
+    <img src="./images/activities/活動内容素材_グラフィック班.png" width="60%" height="auto" id="han_title">
+    <p id="han_txt">この班は主にPCで絵を描きます。
+      <br>部室にはペンタブや液タブが常備されています。
+      <br>桐朋祭では、例年部員が描いた絵を印刷し
+      <br>専用スペースに展示します。
+    </p>
+  </div>
+</div>
+
+</div>
+
+<body>
+  <footer>
+    <img src="./images/フッター素材.png" width="auto" height="24%" id="footer_rogo">
+    <div id="footer_text">
+      <p>住所：東京都国立市中3-1-10 
+      <br>@コンピューター部器具庫
+      <br><a href="https://twitter.com/tcca_main" target="_blank">TCC公式Twitter</a>
+    </div>
+    <div id="footer_text">
+      <p>背景画像提供：<a href="https://sozaino.site/" target="_blank">OKUMONO</a>
+      <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>
+      <br>サイト管理者：82th.S.S</p>
+    </div>
+    <p id="footer_copyright">CopyRight© 桐朋コンピューター部
+    <br>CopyRight© TOHO_Computer_Club</p>
+  </footer>
+</body>

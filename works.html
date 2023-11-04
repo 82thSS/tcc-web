@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  a
+  {
+    cursor: pointer;
+  }
+
+  header
+  {
+    background-color: white;
+    display: flex;
+    height: 12vh;
+    overflow-y: hidden;
+    margin: auto;
+  }
+
+  #header_button_group
+  {
+    margin: auto 5vw auto auto;
+  }
+
+  #header_button
+  {
+    background-color: white;
+    border-color: transparent;
+    font-size: 1.4vw;
+    padding-bottom: 1.2vh;
+    padding-top: 1.2vh;
+    transition: .4s;
+    border-left: .15vw solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    cursor: pointer;
+  }
+
+  #header_button:hover
+  {
+    border-bottom: .15vw solid black;
+  }
+
+  #header_button_sakuhin
+  {
+    background-color: white;
+    border-color: transparent;
+    font-size: 1.4vw;
+    padding-bottom: 1.2vh;
+    padding-top: 1.2vh;
+    transition: .4s;
+    border-left: .15vw solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    cursor: pointer;
+    border-bottom: .15vw solid black;
+  }
+
+  #rogo
+  {
+    text-align: center;
+    margin: auto auto auto 5vw;
+  }
+
+  #background
+  {
+    background-image: url("ホーム背景.png");
+    padding: 4vh 0;
+  }
+
+  #sakuhin
+  {
+    width: 30vw;
+    height: 54vh;
+    text-align: center;
+    font-size: 1.6vw;
+    margin: 20px;
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    background-color: white;
+    cursor: pointer;
+    transition: .4s;
+    overflow-y: hidden;
+  }
+
+  #sakuhin:hover
+  {
+    transform: scale(1.05,1.05);
+  }
+
+  #sakuhin_2group
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  #sakuhin_text
+  {
+    margin: 1vh auto 2vh auto;
+  }
+
+  #sakuhin_title
+  {
+    text-align: center;
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    background-color: white;
+    margin: auto 5vw 4vh 5vw;
+  }
+
+  #sakuhin_title_img
+  {
+    margin: 1vh 2vw;
+  }
+
+  footer
+  {
+    height: 40vh;
+    background-color: #404040;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+  }
+
+  #footer_rogo
+  {
+    display: block;
+    margin: auto 5vw;
+  }
+
+  #footer_text
+  {
+    margin: auto 4vw auto 8vw;
+    font-size: 1.2vw;
+  }
+
+  a
+  {
+    color: white;
+  }
+
+  #footer_copyright
+  {
+    font-size: 1vw;
+    text-align: right;
+    margin: auto 1vw 1vh auto;
+  }
+</style>
+
+<script>
+  function home()
+  {
+    window.location.href="https://tcc-home.netlify.app"
+  }
+
+  function naiyou()
+  {
+    window.location.href="https://tcc-activity.netlify.app"
+  }
+
+  function sakuhin()
+  {
+    window.location.href="https://tcc-works.netlify.app"
+  }
+
+  function oshirase()
+  {
+    window.location.href="https://tcc-announcement.netlify.app"
+  }
+
+  function sakuhin_RB()
+  {
+    window.location.href="https://tcc-works-rivalbreaker.netlify.app";
+  }
+
+  function sakuhin_yokerugame()
+  {
+    window.location.href="https://tcc-works-yokerugame.netlify.app";
+  }
+
+  function sakuhin_SM()
+  {
+    window.location.href="https://tcc-works-switchminigames.netlify.app";
+  }
+
+  function sakuhin_PP()
+  {
+    window.location.href="https://tcc-works-pongpong.netlify.app";
+  }
+</script>
+
+<body>
+  <header>
+    <img src="tccロゴ.png" width="150vw" height="auto" id="rogo">
+    <div id="header_button_group">
+      <input type="submit" value="ホーム" id="header_button" onclick="home()">
+      <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
+      <input type="submit" value="作品" id="header_button_sakuhin" onclick="sakuhin()">
+      <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
+    </div>
+  </header>
+</body>
+
+<div id="background">
+
+<div id="sakuhin_title">
+  <img src="作品素材_タイトル.png" width="90%" height="auto" id="sakuhin_title_img">
+</div>
+
+<div id="sakuhin_2group">
+  <div id="sakuhin" onclick="sakuhin_RB()">
+    <img src="RB素材1.png" width="100%" height="auto">
+    <p id="sakuhin_text">2023年に展示された格闘ゲーム
+    <br>7種のキャラクターの中から選び
+    <br>人間またはCPUと対戦する
+    </p>
+  </div>
+  
+  <div id="sakuhin" onclick="sakuhin_yokerugame()">
+    <img src="よけるげーむ素材1.png" width="100%" height="auto">
+    <p id="sakuhin_text">2023年に展示された避けゲー
+    <br>3Dの空間で向こうから迫りくる
+    <br>障害物を避けていく
+    </p>
+  </div>
+</div>
+
+<div id="sakuhin_2group">
+  <div id="sakuhin" onclick="sakuhin_SM()">
+    <img src="SM素材1.png" width="100%" height="auto">
+    <p id="sakuhin_text">2023年に展示されたゲーム集
+    <br>スイッチをテーマにしたゲームを
+    <br>6種類遊ぶことができる。
+    </p>
+  </div>
+  
+  <div id="sakuhin" onclick="sakuhin_PP()">
+    <img src="PP素材1.png" width="100%" height="auto">
+    <p id="sakuhin_text">2023年に展示された卓球ゲーム
+    <br>ラケットに見立てたバーで
+    <br>相手と対戦する。
+    </p>
+  </div>
+</div>
+
+</div>
+
+<body>
+  <footer>
+    <img src="フッター素材.png" width="auto" height="24%" id="footer_rogo">
+    <div id="footer_text">
+      <p>住所：東京都国立市中3-1-10 
+      <br>@コンピューター部器具庫
+      <br><a href="https://twitter.com/tcca_main" target="_blank">TCC公式Twitter</a>
+    </div>
+    <div id="footer_text">
+      <p>背景画像提供：<a href="https://sozaino.site/" target="_blank">OKUMONO</a>
+      <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>
+      <br>サイト管理者：82th.S.S</p>
+    </div>
+    <p id="footer_copyright">CopyRight© 桐朋コンピューター部
+    <br>CopyRight© TOHO_Computer_Club</p>
+  </footer>
+</body>

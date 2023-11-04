@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<style>
+  *
+  {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  header
+  {
+    background-color: white;
+    display: flex;
+    height: 12vh;
+    overflow-y: hidden;
+    margin: auto;
+  }
+
+  #header_button_group
+  {
+    margin: auto 5vw auto auto;
+  }
+
+  #header_button
+  {
+    background-color: white;
+    border-color: transparent;
+    font-size: 1.4vw;
+    padding-bottom: 1.2vh;
+    padding-top: 1.2vh;
+    transition: .4s;
+    border-left: .15vw solid black;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    cursor: pointer;
+  }
+
+  #header_button:hover
+  {
+    border-bottom: .15vw solid black;
+  }
+
+  #header_twitter:hover
+  {
+    border-bottom: 2px solid black;
+  }
+
+  #rogo
+  {
+    text-align: center;
+    margin: auto auto auto 5vw;
+  }
+
+  #background
+  {
+    background-image: url("ホーム背景.png");
+  }
+
+  #explan
+  {
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    margin: 4vh auto 8vh auto;
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+  }
+
+  #explan_title
+  {
+    margin-bottom: 2vw;
+  }
+
+  #explan_text
+  {
+    line-height: 8vh;
+    font-size: 1.4vw;
+  }
+
+  #explan_img
+  {
+    margin: auto 0 8vh 12vw;
+    text-align: center;
+  }
+
+  h1
+  {
+    padding: 2vh 2vw;
+    border-left: .2vw solid;
+    margin: 2vh auto .4vh 0;
+  }
+
+  footer
+  {
+    height: 40vh;
+    background-color: #404040;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+  }
+
+  footer
+  {
+    height: 40vh;
+    background-color: #404040;
+    display: flex;
+    color: white;
+    font-size: 2vw;
+  }
+
+  #footer_rogo
+  {
+    display: block;
+    margin: auto 5vw;
+  }
+
+  #footer_text
+  {
+    margin: auto 4vw auto 8vw;
+    font-size: 1.2vw;
+  }
+
+  a
+  {
+    color: white;
+  }
+
+  #footer_copyright
+  {
+    font-size: 1vw;
+    text-align: right;
+    margin: auto 1vw 1vh auto;
+  }
+</style>
+
+<script>
+  function home()
+  {
+    window.location.href="https://tcc-home.netlify.app"
+  }
+
+  function naiyou()
+  {
+    window.location.href="https://tcc-activity.netlify.app"
+  }
+
+  function sakuhin()
+  {
+    window.location.href="https://tcc-works.netlify.app"
+  }
+
+  function oshirase()
+  {
+    window.location.href="https://tcc-announcement.netlify.app"
+  }
+</script>
+
+<body>
+    <header>
+      <img src="tccロゴ.png" width="150vw" height="auto" id="rogo">
+      <div id="header_button_group">
+        <input type="submit" value="ホーム" id="header_button" onclick="home()">
+        <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
+        <input type="submit" value="作品" id="header_button" onclick="sakuhin()">
+        <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
+      </div>
+    </header>
+</body>
+
+<div id="background">
+
+<body>
+  <div id="explan">
+    <img src="よけるげーむ素材2.png" width="50%" height="auto" id="explan_title">
+    <h1>概要</h1>
+    <p id="explan_text">C#で作られたこのゲームは、いわゆる避けゲーのジャンルです。
+    <br>向こうから迫ってくる障害物をHPが無くならないように避けるとクリアです。
+    <br>
+    <br>障害物はただの横棒ですが、そこの隙間をくぐり抜けることで
+    <br>避けることができます。
+    <br>黄色いの横棒に触れるとクリアとなり、HPが無くなるとゲームオーバーです。
+    </p>
+    <img src="よけるげーむ素材3.png" width="20%" height="auto">
+    <img src="よけるげーむ素材4.png" width="20%" height="auto">
+    <img src="よけるげーむ素材5.png" width="20%" height="auto">
+    <br><br>
+    <h1>レベル</h1>
+    <p id="explan_text">このゲームにはイージー、ノーマル、ハード、ルナティックの
+    <br>4種類の難易度があります。
+    <br>
+    <br>イージーやノーマルは誰でもクリアできるくらいの難易度ですが、
+    <br>ハードは慣れていない人がクリアするのはかなり難しい程です。
+    <br>ルナティックに関しては、作者にとっても難しいレベルだそうです。
+    </p>
+  </div>
+</body>
+
+<body>
+    <footer>
+      <img src="フッター素材.png" width="auto" height="24%" id="footer_rogo">
+      <div id="footer_text">
+        <p>住所：東京都国立市中3-1-10 
+        <br>@コンピューター部器具庫
+        <br><a href="https://twitter.com/tcca_main" target="_blank">TCC公式Twitter</a>
+      </div>
+      <div id="footer_text">
+        <p>背景画像提供：<a href="https://sozaino.site/" target="_blank">OKUMONO</a>
+        <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>
+        <br>サイト管理者：82th.S.S</p>
+      </div>
+      <p id="footer_copyright">CopyRight© 桐朋コンピューター部
+      <br>CopyRight© TOHO_Computer_Club</p>
+    </footer>
+  </body>
