@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8">
 <style>
   *
   {
@@ -68,7 +69,7 @@
 
   #background
   {
-    background-image: url("ホーム背景.png");
+    background-image: url("./images/背景.png");
     padding: 4vh 0;
   }
 
@@ -154,48 +155,48 @@
 <script>
   function home()
   {
-    window.location.href="https://tcc-home.netlify.app"
+    window.location.href="index.html"
   }
 
   function naiyou()
   {
-    window.location.href="https://tcc-activity.netlify.app"
+    window.location.href="activities.html"
   }
 
   function sakuhin()
   {
-    window.location.href="https://tcc-works.netlify.app"
+    window.location.href="works.html"
   }
 
   function oshirase()
   {
-    window.location.href="https://tcc-announcement.netlify.app"
+    window.location.href="info.html"
   }
 
   function sakuhin_RB()
   {
-    window.location.href="https://tcc-works-rivalbreaker.netlify.app";
+    window.location.href="works/rb.html";
   }
 
   function sakuhin_yokerugame()
   {
-    window.location.href="https://tcc-works-yokerugame.netlify.app";
+    window.location.href="works/yg.html";
   }
 
   function sakuhin_SM()
   {
-    window.location.href="https://tcc-works-switchminigames.netlify.app";
+    window.location.href="works/sm.html";
   }
 
   function sakuhin_PP()
   {
-    window.location.href="https://tcc-works-pongpong.netlify.app";
+    window.location.href="works/pp.html";
   }
 </script>
 
 <body>
   <header>
-    <img src="tccロゴ.png" width="150vw" height="auto" id="rogo">
+    <img src="images/tccロゴ.png" width="150vw" height="auto" id="rogo">
     <div id="header_button_group">
       <input type="submit" value="ホーム" id="header_button" onclick="home()">
       <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
@@ -208,12 +209,12 @@
 <div id="background">
 
 <div id="sakuhin_title">
-  <img src="作品素材_タイトル.png" width="90%" height="auto" id="sakuhin_title_img">
+  <img src="images/works/作品素材_タイトル.png" width="90%" height="auto" id="sakuhin_title_img">
 </div>
 
 <div id="sakuhin_2group">
   <div id="sakuhin" onclick="sakuhin_RB()">
-    <img src="RB素材1.png" width="100%" height="auto">
+    <img src="images/works/RB素材1.png" width="100%" height="auto">
     <p id="sakuhin_text">2023年に展示された格闘ゲーム
     <br>7種のキャラクターの中から選び
     <br>人間またはCPUと対戦する
@@ -221,7 +222,7 @@
   </div>
   
   <div id="sakuhin" onclick="sakuhin_yokerugame()">
-    <img src="よけるげーむ素材1.png" width="100%" height="auto">
+    <img src="images/works/よけるげーむ素材1.png" width="100%" height="auto">
     <p id="sakuhin_text">2023年に展示された避けゲー
     <br>3Dの空間で向こうから迫りくる
     <br>障害物を避けていく
@@ -231,7 +232,7 @@
 
 <div id="sakuhin_2group">
   <div id="sakuhin" onclick="sakuhin_SM()">
-    <img src="SM素材1.png" width="100%" height="auto">
+    <img src="images/works/SM素材1.png" width="100%" height="auto">
     <p id="sakuhin_text">2023年に展示されたゲーム集
     <br>スイッチをテーマにしたゲームを
     <br>6種類遊ぶことができる。
@@ -239,7 +240,7 @@
   </div>
   
   <div id="sakuhin" onclick="sakuhin_PP()">
-    <img src="PP素材1.png" width="100%" height="auto">
+    <img src="images/works/PP素材1.png" width="100%" height="auto">
     <p id="sakuhin_text">2023年に展示された卓球ゲーム
     <br>ラケットに見立てたバーで
     <br>相手と対戦する。
@@ -251,7 +252,7 @@
 
 <body>
   <footer>
-    <img src="フッター素材.png" width="auto" height="24%" id="footer_rogo">
+    <img src="images/フッター素材.png" width="auto" height="24%" id="footer_rogo">
     <div id="footer_text">
       <p>住所：東京都国立市中3-1-10 
       <br>@コンピューター部器具庫

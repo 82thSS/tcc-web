@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<meta charset="UTF-8" />
 <style>
   *
   {
@@ -53,7 +54,7 @@
 
   #background
   {
-    background-image: url("ホーム背景.png");
+    background-image: url("../images/背景.png");
   }
 
   #explan
@@ -127,28 +128,28 @@
 <script>
   function home()
   {
-    window.location.href="https://tcc-home.netlify.app"
+    window.location.href="../index.html"
   }
 
   function naiyou()
   {
-    window.location.href="https://tcc-activity.netlify.app"
+    window.location.href="../activities.html"
   }
 
   function sakuhin()
   {
-    window.location.href="https://tcc-works.netlify.app"
+    window.location.href="../works.html"
   }
 
   function oshirase()
   {
-    window.location.href="https://tcc-announcement.netlify.app"
+    window.location.href="../info"
   }
 </script>
 
 <body>
     <header>
-      <img src="tccロゴ.png" width="150vw" height="auto" id="rogo">
+      <img src="../images/tccロゴ.png" width="150vw" height="auto" id="rogo">
       <div id="header_button_group">
         <input type="submit" value="ホーム" id="header_button" onclick="home()">
         <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
@@ -162,7 +163,7 @@
 
 <body>
   <div id="explan">
-    <img src="活動内容素材_グラフィック班.png" width="80%" height="auto" id="explan_title">
+    <img src="../images/activities/活動内容素材_グラフィック班.png" width="80%" height="auto" id="explan_title">
     <h1>概要</h1>
     <p id="explan_text">この班は主にペンタブや液タブなどを使って絵を描きます。
     <br>描く機材が数台しかないので紙に描く場合もあります(グラフィックとは)
@@ -184,8 +185,8 @@
     </p>
     <br><br>
     <div>
-      <img src="Clip Studioアイコン.png" width="30%" height="auto" id="explan_img">
-      <img src="Gimpアイコン.png" width="28%" height="auto" id="explan_img">
+      <img src="../images/activities/Clip Studioアイコン.png" width="30%" height="auto" id="explan_img">
+      <img src="../images/activities/Gimpアイコン.png" width="28%" height="auto" id="explan_img">
     </div>
     <br>
     <h1>桐朋祭では？</h1>
@@ -203,7 +204,7 @@
 
 <body>
     <footer>
-      <img src="フッター素材.png" width="auto" height="24%" id="footer_rogo">
+      <img src="../images/フッター素材.png" width="auto" height="24%" id="footer_rogo">
       <div id="footer_text">
         <p>住所：東京都国立市中3-1-10 
         <br>@コンピューター部器具庫
