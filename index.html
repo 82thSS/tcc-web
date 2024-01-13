@@ -78,6 +78,12 @@
     height: 80%;
   }
 
+  @media screen and (min-width : 1100px){
+  #menu{
+    display: none;
+  }
+  }
+
   #menu{
     margin: 0 0 0 auto;
   }
@@ -85,8 +91,6 @@
   #menu_text_group{
     display: none;
     text-align: center;
-    background-image: url("images/home/ホーム素材_MUNU背景.png");
-    height: 88vh;
   }
 
   #menu_text{
@@ -94,6 +98,11 @@
     color: black;
     display: block;
     font-size: 50px;
+  }
+
+  #menu_out{
+    font-size: 100px;
+    margin: 20vh;
   }
 
   #background {
@@ -261,6 +270,12 @@
     document.getElementById("footer").style.display="none";
     document.getElementById("menu_text_group").style.display="block";
   }
+
+  function menu_out(){
+    document.getElementById("background").style.display="block";
+    document.getElementById("footer").style.display="flex";
+    document.getElementById("menu_text_group").style.display="none";
+  }
 </script>
 
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
@@ -309,6 +324,9 @@
   </h1>
   <h1 onclick="oshirase()" id="menu_text">
     お知らせ
+  </h1>
+  <h1 onclick="menu_out()" id="menu_out">
+    ✕
   </h1>
 </div>
 
