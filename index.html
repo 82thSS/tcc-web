@@ -94,15 +94,15 @@
   }
 
   #menu_text{
-    margin-top: 20vh;
+    margin-top: 100px;
     color: black;
     display: block;
-    font-size: 50px;
+    font-size: 20px;
   }
 
   #menu_out{
-    font-size: 100px;
-    margin: 20vh;
+    font-size: 30px;
+    margin: 100px;
   }
 
   #background {
@@ -117,6 +117,7 @@
     height: 88vh;
   }
 
+  @media screen and (min-width : 1100px) /*パソコン画面*/ {
   #item2_group {
     justify-content: center;
     display: flex;
@@ -124,29 +125,70 @@
   }
 
   #item2 {
-    border: solid #4a4a4a 0.4vw;
-    box-shadow: 0.5vw 0.5vw 0.25vw;
-    width: 15vw;
-    height: 44vh;
-    margin: 2vw 2vh;
-    background-color: white;
-    justify-content: center;
-    transition: 0.4s;
-    background-image: url("./images/home/ホーム背景2.png");
+      border: solid #4a4a4a 0.4vw;
+      box-shadow: 0.5vw 0.5vw 0.25vw;
+      width: 15vw;
+      height: 44vh;
+      margin: 4vh 2vw;
+      background-color: white;
+      justify-content: center;
+      transition: 0.4s;
+      background-image: url("./images/home/ホーム背景2.png");
+    }
+
+    #item2:hover {
+      transform: scale(1.05, 1.05);
+    }
+
+    #item2_title {
+      margin: 0.8vw auto;
+      display: block;
+      width: 94%; 
+      height: auto;
+    }
+
+    #item2_img {
+      margin: auto;
+      display: block;
+      width: 90%;
+      height: auto;
+    }
+
   }
 
-  #item2:hover {
-    transform: scale(1.05, 1.05);
+  @media screen and (max-width : 1100px) /*スマホ画面*/ {
+  #item2_group {
+      justify-content: center;
+      display: flex;
+      overflow-y: hidden;
   }
+
+  #item2 {
+      border: solid #4a4a4a 0.4vw;
+      box-shadow: 0.5vw 0.5vw 0.25vw;
+      width: 40vw;
+      height: 30vh;
+      margin: 4vh 2vw;
+      background-color: white;
+      justify-content: center;
+      transition: 0.4s;
+      background-image: url("./images/home/ホーム背景2.png");
+    }
 
   #item2_title {
-    margin: 0.8vw auto;
-    display: block;
-  }
+      margin: 0.8vw auto;
+      display: block;
+      width: 94%; 
+      height: auto;
+    }
 
   #item2_img {
-    margin: auto;
-    display: block;
+      margin: auto;
+      display: block;
+      width: 90%;
+      height: auto;
+    }
+
   }
 
   #item3 {
@@ -351,8 +393,6 @@
       <a href="https://tcc-activity.netlify.app">
         <img
           src="./images/home/ホーム素材_活動内容.png"
-          width="auto"
-          height="18%"
           id="item2_title"
         />
         <img
@@ -368,8 +408,6 @@
       <a href="https://tcc-works.netlify.app">
         <img
           src="./images/home/ホーム素材_作品.png"
-          width="auto"
-          height="18%"
           id="item2_title"
         />
         <img
