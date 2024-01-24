@@ -117,6 +117,16 @@
       
   }
 
+  #item4_group {
+    display: flex;
+    margin: auto;
+  }
+
+  a{
+    color: white;
+
+  }
+
   @media screen and (min-width : 1100px) /*パソコン画面*/ {
     #menu{
     display: none;
@@ -193,6 +203,59 @@
       font-size: 30px;
     }
 
+    #item4_1 {
+      width: 32vw;
+      height: 64vh;
+      background-color: white;
+      border: solid #4a4a4a 0.4vw;
+      box-shadow: 0.5vw 0.5vw 0.25vw;
+      margin: 0 1.7vw 5vh auto;
+      background-image: url("./images/home/ホーム背景1.png");
+      text-align: right;
+    }
+
+    #item4_2 {
+      width: 32vw;
+      height: 64vh;
+      background-color: white;
+      border: solid #4a4a4a 0.4vw;
+      box-shadow: 0.5vw 0.5vw 0.25vw;
+      margin: 0 auto 5vh 1.7vw;
+      background-image: url("./images/home/ホーム背景1.png");
+    }
+
+    #item4_title {
+      display: block;
+      text-align: center;
+      margin: 8vh auto 4vh auto;
+      font-family: "ＭＳ 明朝";
+      width: auto;
+      height: 18%;
+    }
+
+    #item4_text {
+      text-align: center;
+      font-size: 30px;
+    }
+
+    footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+        font-size: 2vw;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+    }
+
+    #footer_text {
+      margin: auto 4vw auto 8vw;
+      font-size: 1.2vw;
+    }
+
   }
 
   @media screen and (max-width : 1100px) /*スマホ画面*/ {
@@ -241,10 +304,11 @@
     }
 
     #item3 {
+      width: 90vw;
       background-color: white;
       border: solid #4a4a4a 0.4vw;
       box-shadow: 0.5vw 0.5vw 0.25vw;
-      margin: 0px 5% 5vh 5%;
+      margin: 0vh 4vw 3vh 4vw;
       background-image: url("./images/home/ホーム背景1.png");
     }
 
@@ -262,83 +326,62 @@
       margin-bottom: 4vh;
     }
 
-  }
+    #item4_1 {
+      width: 42.5vw;
+      height: 40vh;
+      background-color: white;
+      border: solid #4a4a4a 0.4vw;
+      box-shadow: 0.5vw 0.5vw 0.25vw;
+      margin: 0 2vw 5vh auto;
+      background-image: url("./images/home/ホーム背景1.png");
+      text-align: right;
+    }
 
-  #item4_group {
-    display: flex;
-    margin: auto;
-  }
+    #item4_2 {
+      width: 42.5vw;
+      height: 40vh;
+      background-color: white;
+      border: solid #4a4a4a 0.4vw;
+      box-shadow: 0.5vw 0.5vw 0.25vw;
+      margin: 0 auto 5vh 2vw;
+      background-image: url("./images/home/ホーム背景1.png");
+    }
 
-  #item4_1 {
-    width: 32vw;
-    height: 64vh;
-    background-color: white;
-    border: solid #4a4a4a 0.4vw;
-    box-shadow: 0.5vw 0.5vw 0.25vw;
-    margin: 0 1.7vw 5vh auto;
-    background-image: url("./images/home/ホーム背景1.png");
-    text-align: right;
-  }
+    #item4_title {
+      display: block;
+      text-align: center;
+      margin: 4vh auto 2vh auto;
+      font-family: "ＭＳ 明朝";
+      width: auto;
+      height: 14%;
+    }
 
-  #item4_2 {
-    width: 32vw;
-    height: 64vh;
-    background-color: white;
-    border: solid #4a4a4a 0.4vw;
-    box-shadow: 0.5vw 0.5vw 0.25vw;
-    margin: 0 auto 5vh 1.7vw;
-    background-image: url("./images/home/ホーム背景1.png");
-  }
+    #item4_text {
+      text-align: center;
+      font-size: 3.6vw;
+    }
 
-  #item4_title {
-    display: block;
-    text-align: center;
-    margin: 8vh auto 4vh auto;
-    font-family: "ＭＳ 明朝";
-  }
+    #footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+      font-size: 2vw;
+    }
 
-  #item4_text {
-    text-align: center;
-    font-size: 28px;
-  }
+    #footer_group{
+      display: inline;
+    }
 
-  footer {
-    height: 40vh;
-    background-color: #404040;
-    display: flex;
-    color: white;
-    font-size: 2vw;
-  }
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+    }
 
-  #footer_rogo {
-    display: block;
-    margin: auto 5vw;
-  }
-
-  #footer_text {
-    margin: auto 4vw auto 8vw;
-    font-size: 1.2vw;
-  }
-
-  a {
-    color: white;
-  }
-
-  #footer_copyright {
-    font-size: 1vw;
-    text-align: right;
-    margin: auto 1vw 1vh auto;
-  }
-
-  #space{
-    background-color: #4a4a4a;
-    width: 100vw;
-    height: 1000px;
-  @media screen and (min-width:400px){
-    background-color: white;
-    width: 100vw;
-    height: 1000px;
-  }
+    #footer_text {
+      margin: auto 2vw auto 2vw;
+      font-size: 2vw;
+    }
   }
 </style>
 
@@ -514,10 +557,10 @@
       />
       <p id="item3_text">
         東京都国立市にある「桐朋中学校・高等学校」にて
-        <br />活動している文化部の一つ。TCCやコン部とも呼ぶ。
+        <br />活動している文化部の一つ｡TCCやコン部とも呼ぶ｡
         <br />プログラミング班、サウンド班、グラフィック班の
         <br />3つの班に分かれて活動しており、部員が制作した
-        <br />作品は文化祭「桐朋祭」にて展示している。
+        <br />作品は桐朋祭にて展示している。
       </p>
     </div>
   </body>
@@ -532,10 +575,9 @@
           id="item4_title"
         />
         <p id="item4_text">
-          月～土曜日は部員各々が部室を <br />開放し作業するので
-          <br />決まった活動日はありません。
-          <br />夏休みも同様に、学校に入れる日で <br />あればいつでも部室で
-          <br />作業することができます。
+          月～土曜日は部員各々が 
+          <br />部室を開放し作業するので決まった活動日はありません｡
+          <br />夏休みも同様に、学校に入れる日であればいつでも部室で作業することができます｡
         </p>
       </div>
     </body>
@@ -549,10 +591,9 @@
           id="item4_title"
         />
         <p id="item4_text">
-          学期に1度成果発表会を行います。 <br />成果発表会は、それぞれが制作した
-          <br />作品を発表するといった形式です。
-          <br />長期休暇には毎年合宿を行います。
-          <br />決まった合宿地はありません。
+          学期に1度成果発表会を行います｡ 
+          <br />成果発表会は部員がが制作した作品を発表するといった形式で、桐朋祭にてその作品を展示します｡
+          <br />長期休暇には毎年作業合宿を行います｡
         </p>
       </div>
     </body>
@@ -563,8 +604,8 @@
   <footer id="footer">
     <img
       src="./images/フッター素材.png"
-      width="auto"
-      height="24%"
+      width="200vw"
+      height="auto"
       id="footer_rogo"
     />
     <div id="footer_text">
@@ -590,9 +631,6 @@
         <br />サイト管理者：82th.S.S
       </p>
     </div>
-    <p id="footer_copyright">
-      CopyRight© 桐朋コンピューター部 <br />CopyRight© TOHO_Computer_Club
-    </p>
   </footer>
 </body>
 
