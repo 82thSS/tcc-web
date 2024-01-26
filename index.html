@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
   }
 
   a {
@@ -17,58 +18,6 @@
     height: 12vh;
     overflow-y: hidden;
     margin: auto;
-  }
-
-  @media screen and (max-width : 1100px){
-
-  #header_button_group {
-    display: none;
-  }
-
-  }
-
-  @media screen and (min-width : 1100px){
-
-  #header_button_group {
-    margin: auto 20px auto auto;
-  }
-
-  #header_button {
-    background-color: white;
-    border-color: transparent;
-    font-size: 20px;
-    padding-bottom: 1%;
-    padding-top: 1%;
-    transition: 0.4s;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin: auto 20px;
-    cursor: pointer;
-    height: 60px;
-  }
-
-  
-  #header_button:hover {
-    border-bottom: 0.15vw solid black;
-  }
-  
-
-  #header_button_home {
-    background-color: white;
-    border-color: transparent;
-    font-size: 1.4vw;
-    padding-bottom: 1.2vh;
-    padding-top: 1.2vh;
-    transition: 0.4s;
-    border-left: 0.15vw solid black;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    cursor: pointer;
-    border-bottom: 0.15vw solid black;
-  }
-
   }
 
   #rogo {
@@ -112,8 +61,8 @@
   }
 
   #item1_title{
-      text-align: right; 
-      overflow-y: hidden;
+    text-align: right; 
+    overflow-y: hidden;
       
   }
 
@@ -124,12 +73,51 @@
 
   a{
     color: white;
-
   }
 
   @media screen and (min-width : 1100px) /*パソコン画面*/ {
     #menu{
-    display: none;
+      display: none;
+    }
+
+    #header_button_group {
+      margin: auto 20px auto auto;
+    }
+
+    #header_button {
+      background-color: white;
+      border-color: transparent;
+      font-size: 20px;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      transition: 0.4s;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin: auto 20px;
+      cursor: pointer;
+      height: 60px;
+    }
+
+  
+    #header_button:hover {
+      border-bottom: 0.15vw solid black;
+    }
+  
+
+    #header_button_home {
+      background-color: white;
+      border-color: transparent;
+      font-size: 1.4vw;
+      padding-bottom: 1.2vh;
+      padding-top: 1.2vh;
+      transition: 0.4s;
+      border-left: 0.15vw solid black;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      cursor: pointer;
+      border-bottom: 0.15vw solid black;
     }
 
     #item1_title {
@@ -261,6 +249,10 @@
   }
 
   @media screen and (max-width : 1100px) /*スマホ画面*/ {
+    #header_button_group {
+      display: none;
+    }
+
     #item1_title {
       width: 90%;
       height: auto;

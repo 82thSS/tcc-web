@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
   }
 
   header
@@ -17,49 +18,32 @@
     margin: auto;
   }
 
-  #header_button_group
-  {
-    margin: auto 5vw auto auto;
-  }
-
-  #header_button
-  {
-    background-color: white;
-    border-color: transparent;
-    font-size: 1.4vw;
-    padding-bottom: 1.2vh;
-    padding-top: 1.2vh;
-    transition: .4s;
-    border-left: .15vw solid black;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    cursor: pointer;
-  }
-
-  #header_button:hover
-  {
-    border-bottom: .15vw solid black;
-  }
-
-  #header_button_oshirase
-  {
-    background-color: white;
-    border-color: transparent;
-    font-size: 1.4vw;
-    padding-bottom: 1.2vh;
-    padding-top: 1.2vh;
-    transition: .4s;
-    border-left: .15vw solid black;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    cursor: pointer;
-    border-bottom: .15vw solid black;
-  }
-
-  #rogo
-  {
+  #rogo {
     text-align: center;
     margin: auto auto auto 5vw;
+    width: auto;
+    height: 80%;
+  }
+
+  #menu{
+    margin: 0 0 0 auto;
+  }
+
+  #menu_text_group{
+    display: none;
+    text-align: center;
+  }
+
+  #menu_text{
+    margin-top: 6vh;
+    color: black;
+    display: block;
+    font-size: 20px;
+  }
+
+  #menu_out{
+    font-size: 30px;
+    margin-top: 6vh;
   }
 
   #background
@@ -77,17 +61,127 @@
     padding: 2vw;
   }
 
-  #text
-  {
-    line-height: 8vh;
-    font-size: 1.4vw;
-  }
-
-  h1
+  #text_title
   {
     padding: 2vh 2vw;
     border-left: .2vw solid;
     margin: 2vh auto .4vh 0;
+  }
+
+  @media screen and (min-width : 1100px) /*パソコン画面*/ {
+    #menu{
+      display: none;
+    }
+
+    #header_button_group {
+      margin: auto 20px auto auto;
+    }
+
+    #header_button {
+      background-color: white;
+      border-color: transparent;
+      font-size: 20px;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      transition: 0.4s;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin: auto 20px;
+      cursor: pointer;
+      height: 60px;
+    }
+
+  
+    #header_button:hover {
+      border-bottom: 0.15vw solid black;
+    }
+  
+
+    #header_button_home {
+      background-color: white;
+      border-color: transparent;
+      font-size: 1.4vw;
+      padding-bottom: 1.2vh;
+      padding-top: 1.2vh;
+      transition: 0.4s;
+      border-left: 0.15vw solid black;
+      padding-left: 3vw;
+      padding-right: 3vw;
+      cursor: pointer;
+      border-bottom: 0.15vw solid black;
+    }
+
+    #text
+    {
+      line-height: 8vh;
+      font-size: 1.4vw;
+    }
+
+    footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+        font-size: 2vw;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+      width: 14vw;
+      height: auto;
+    }
+
+    #footer_text {
+      margin: auto 4vw auto 8vw;
+      font-size: 1.2vw;
+    }
+
+    #footer_link{
+    color: white;
+    }
+  }
+
+  @media screen and (max-width : 1100px) /*スマホ画面*/ {
+    #header_button_group {
+      display: none;
+    }
+
+    #text
+    {
+      line-height: 3vh;
+      font-size: 1.4vw;
+    }
+
+    #footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+      font-size: 2vw;
+    }
+
+    #footer_group{
+      display: inline;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+      width: 20vw;
+      height: auto;
+    }
+
+    #footer_text {
+      margin: auto 2vw auto 2vw;
+      font-size: 2vw;
+    }
+
+    #footer_link {
+      color: white;
+    }
   }
 
   footer
@@ -111,16 +205,16 @@
     font-size: 1.2vw;
   }
 
-  #footer_link
-  {
-    color: white;
-  }
-
   #footer_copyright
   {
     font-size: 1vw;
     text-align: right;
     margin: auto 1vw 1vh auto;
+  }
+
+  #footer_link
+  {
+    color: white;
   }
 </style>
 
@@ -144,35 +238,68 @@
   {
     window.location.href="info.html"
   }
+
+  function menu(){
+    document.getElementById("background").style.display="none";
+    document.getElementById("menu_text_group").style.display="block";
+  }
+
+  function menu_out(){
+    document.getElementById("background").style.display="block";
+    document.getElementById("menu_text_group").style.display="none";
+  }
 </script>
 
 <body>
     <header>
-      <img src="images/tccロゴ.png" width="160" height="90" id="rogo">
+      <img src="images/tccロゴ.png" id="rogo">
+      <img 
+        type="image" 
+        src="./images/home/ホーム素材_MENU.png" 
+        id="menu"
+        onclick="menu()"
+    />
       <div id="header_button_group">
         <input type="submit" value="ホーム" id="header_button" onclick="home()">
         <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
         <input type="submit" value="作品" id="header_button" onclick="sakuhin()">
-        <input type="submit" value="お知らせ" id="header_button_oshirase" onclick="oshirase()">
+        <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
       </div>
     </header>
 </body>
+
+<div id="menu_text_group">
+  <h1 onclick="home()" id="menu_text">
+    ホーム
+  </h1>
+  <h1 onclick="naiyou()" id="menu_text">
+    活動内容
+  </h1>
+  <h1 onclick="sakuhin()" id="menu_text">
+    作品
+  </h1>
+  <h1 onclick="oshirase()" id="menu_text">
+    お知らせ
+  </h1>
+  <h1 onclick="menu_out()" id="menu_out">
+    ✕
+  </h1>
+</div>
 
 <div id="background">
 
 <body>
   <div id="text_group">
-    <h1>お知らせ</h1>
+    <h1 id="text_title">お知らせ</h1>
     <p id="text">2023/8/28
     <br>コンピューター部の新しいホームページを開設いたしました。
-    <br>このサイトは、主に桐朋祭での運用を予定していますが、
-    <br>何か行事があるたびに更新いたします。
+    <br>このサイトは、主に桐朋祭での運用を予定していますが、何か行事があるたびに更新いたします。
     <br>
     <br><a href="https://twitter.com/tcca_main" target="_blank">公式Twitter</a>では常に情報を更新しておりますので
     <br>ぜひフォローお願いいたします。
     </p>
     <p id="text"></p>
-    <h1>更新状況</h1>
+    <h1 id="text_title">更新状況</h1>
     <p id="text">2023/10/5
     <br>PCの解像度によってページの文字などが変わってしまう問題を解決しました。
     <br>
@@ -182,8 +309,7 @@
     <br>2023/8/28
     <br>とりあえずひと段落付いたのでページをネットに公開しました。
     <br>
-    <br>今はまだ部員以外の人目に触れることがないこのサイトですが、
-    <br>桐朋祭では私の努力が報われる時が来るでしょう。
+    <br>今はまだ部員以外の人目に触れることがないこのサイトですが、桐朋祭では私の努力が報われる時が来るでしょう。
     <br>
     <br>2023/8/18
     <br>どうも、82期のS.Sです。
@@ -199,7 +325,7 @@
     <br>結局居場所は無くなるんですけどね
     </p>
     <br>
-    <h1>管理人のつぶやき</h1>
+    <h1 id="text_title">管理人のつぶやき</h1>
     <p id="text">2023/9/8
     <br>台風で休校！やったー！
     <br>
@@ -219,7 +345,7 @@
 
 <body>
     <footer>
-      <img src="images/フッター素材.png" width="200" height="75" id="footer_rogo">
+      <img src="images/フッター素材.png" id="footer_rogo">
       <div id="footer_text">
         <p>住所：東京都国立市中3-1-10 
         <br>@コンピューター部器具庫
@@ -230,7 +356,5 @@
         <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank" id="footer_link">いらすとや</a>
         <br>サイト管理者：82th.S.S</p>
       </div>
-      <p id="footer_copyright">CopyRight© 桐朋コンピューター部
-      <br>CopyRight© TOHO_Computer_Club</p>
     </footer>
   </body>
