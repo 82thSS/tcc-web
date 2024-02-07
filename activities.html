@@ -22,55 +22,115 @@
     margin: auto;
   }
 
-  #header_button_group
-  {
-    margin: auto 5vw auto auto;
-  }
-
-  #header_button
-  {
-    background-color: white;
-    border-color: transparent;
-    font-size: 1.4vw;
-    padding-bottom: 1.2vh;
-    padding-top: 1.2vh;
-    transition: .4s;
-    border-left: .15vw solid black;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    cursor: pointer;
-  }
-
-  #header_button:hover
-  {
-    border-bottom: .15vw solid black;
-  }
-
-  #header_button_naiyou
-  {
-    background-color: white;
-    border-color: transparent;
-    font-size: 1.4vw;
-    padding-bottom: 1.2vh;
-    padding-top: 1.2vh;
-    transition: .4s;
-    border-left: .15vw solid black;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    cursor: pointer;
-    border-bottom: .15vw solid black;
-  }
-
   #rogo
   {
     text-align: center;
     margin: auto auto auto 5vw;
+    width: auto;
+    height: 80%;
+  }
+
+  #menu{
+    margin: 0 0 0 auto;
+  }
+
+  #menu_text_group{
+    display: none;
+    text-align: center;
+  }
+
+  #menu_text{
+    margin-top: 6vh;
+    color: black;
+    display: block;
+    font-size: 20px;
+  }
+
+  #menu_out{
+    font-size: 30px;
+    margin-top: 6vh;
   }
 
   #background
   {
     background-image: url("./images/背景.png");
     padding: 4vh 0;
+  }
+
+  @media screen and (min-width : 1100px) /*パソコン画面*/ {
+    #menu{
+      display: none;
+    }
+
+    #header_button_group {
+      margin: auto 20px auto auto;
+    }
+
+    #header_button {
+      background-color: white;
+      border-color: transparent;
+      font-size: 20px;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      transition: 0.4s;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin: auto 20px;
+      cursor: pointer;
+      height: 60px;
+    }
+
+    footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+        font-size: 2vw;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+      width: 14vw;
+      height: auto;
+    }
+
+    #footer_text {
+      margin: auto 4vw auto 8vw;
+      font-size: 1.2vw;
+    }
+  }
+
+  @media screen and (max-width : 1100px) /*スマホ画面*/ {
+    #header_button_group {
+      display: none;
+    }
+
+    #footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+      font-size: 2vw;
+    }
+
+    #footer_group{
+      display: inline;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+      width: 20vw;
+      height: auto;
+    }
+
+    #footer_text {
+      margin: auto 2vw auto 2vw;
+      font-size: 2vw;
+    }
   }
 
   #han_group
@@ -115,39 +175,6 @@
     text-align: center;
     font-size: 1.5vw;
   }
-
-  footer
-  {
-    height: 40vh;
-    background-color: #404040;
-    display: flex;
-    color: white;
-    font-size: 2vw;
-  }
-
-  #footer_rogo
-  {
-    display: block;
-    margin: auto 5vw;
-  }
-
-  #footer_text
-  {
-    margin: auto 4vw auto 8vw;
-    font-size: 1.2vw;
-  }
-
-  a
-  {
-    color: white;
-  }
-
-  #footer_copyright
-  {
-    font-size: 1vw;
-    text-align: right;
-    margin: auto 1vw 1vh auto;
-  }
 </style>
 
 <script>
@@ -185,19 +212,48 @@
   {
     window.location.href="activities/graphic.html";
   }
+
+  function menu(){
+    document.getElementById("background").style.display="none";
+    document.getElementById("footer").style.display="none";
+    document.getElementById("menu_text_group").style.display="block";
+  }
+
+  function menu_out(){
+    document.getElementById("background").style.display="block";
+    document.getElementById("footer").style.display="flex";
+    document.getElementById("menu_text_group").style.display="none";
+  }
 </script>
 
-<body>
-  <header>
-    <img src="./images/tccロゴ.png" width="150vw" height="auto" id="rogo">
-    <div id="header_button_group">
-      <input type="submit" value="ホーム" id="header_button" onclick="home()">
-      <input type="submit" value="活動内容" id="header_button_naiyou" onclick="naiyou()">
-      <input type="submit" value="作品" id="header_button" onclick="sakuhin()">
-      <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
-    </div>
-  </header>
-</body>
+<header>
+  <img src="./images/tccロゴ.png" width="150vw" height="auto" id="rogo">
+  <img src="./images/home/ホーム素材_MENU.png" id="menu" onclick="menu()"/>
+  <div id="header_button_group">
+    <input type="submit" value="ホーム" id="header_button" onclick="home()">
+    <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
+    <input type="submit" value="作品" id="header_button" onclick="sakuhin()">
+    <input type="submit" value="お知らせ" id="header_button" onclick="oshirase()">
+  </div>
+</header>
+
+<div id="menu_text_group">
+  <h1 onclick="home()" id="menu_text">
+    ホーム
+  </h1>
+  <h1 onclick="naiyou()" id="menu_text">
+    活動内容
+  </h1>
+  <h1 onclick="sakuhin()" id="menu_text">
+    作品
+  </h1>
+  <h1 onclick="oshirase()" id="menu_text">
+    お知らせ
+  </h1>
+  <h1 onclick="menu_out()" id="menu_out">
+    ✕
+  </h1>
+</div>
 
 <div id="background">
 
