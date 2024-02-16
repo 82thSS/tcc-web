@@ -31,19 +31,20 @@
 
   #menu_text_group{
     display: none;
-    text-align: center;
   }
 
   #menu_text{
-    margin-top: 6vh;
+    margin: 6vh auto 0 auto;
     color: black;
     display: block;
-    font-size: 20px;
+    height: 10vh;
+    width: auto;
   }
 
   #menu_out{
     font-size: 30px;
     margin-top: 6vh;
+    text-align: center;
   }
 
   #background
@@ -277,18 +278,10 @@
 </body>
 
 <div id="menu_text_group">
-  <h1 onclick="home()" id="menu_text">
-    ホーム
-  </h1>
-  <h1 onclick="naiyou()" id="menu_text">
-    活動内容
-  </h1>
-  <h1 onclick="sakuhin()" id="menu_text">
-    作品
-  </h1>
-  <h1 onclick="oshirase()" id="menu_text">
-    お知らせ
-  </h1>
+  <img src="./images/home/ホーム素材_ホーム.png" onclick="home()" id="menu_text">
+  <img src="./images/home/ホーム素材_活動内容.png" onclick="naiyou()" id="menu_text">
+  <img src="./images/home/ホーム素材_作品.png" onclick="sakuhin()" id="menu_text">
+  <img src="./images/home/ホーム素材_お知らせ.png" onclick="oshirase()" id="menu_text">
   <h1 onclick="menu_out()" id="menu_out">
     ✕
   </h1>
