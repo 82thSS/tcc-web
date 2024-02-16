@@ -37,14 +37,18 @@
     margin: 6vh auto 0 auto;
     color: black;
     display: block;
-    height: 10vh;
+    height: 6vh;
     width: auto;
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    background-color: white;
+    padding: 2vw;
   }
 
   #menu_out{
     font-size: 30px;
-    margin-top: 6vh;
     text-align: center;
+    margin-top: 6vh;
   }
 
   #background
@@ -124,7 +128,7 @@
       background-color: #404040;
       display: flex;
       color: white;
-        font-size: 2vw;
+      font-size: 2vw;
     }
 
     #footer_rogo {
@@ -192,39 +196,6 @@
       color: white;
     }
   }
-
-  footer
-  {
-    height: 40vh;
-    background-color: #404040;
-    display: flex;
-    color: white;
-    font-size: 2vw;
-  }
-
-  #footer_rogo
-  {
-    display: block;
-    margin: auto 5vw;
-  }
-
-  #footer_text
-  {
-    margin: auto 4vw auto 8vw;
-    font-size: 1.2vw;
-  }
-
-  #footer_copyright
-  {
-    font-size: 1vw;
-    text-align: right;
-    margin: auto 1vw 1vh auto;
-  }
-
-  #footer_link
-  {
-    color: white;
-  }
 </style>
 
 <script>
@@ -282,9 +253,7 @@
   <img src="./images/home/ホーム素材_活動内容.png" onclick="naiyou()" id="menu_text">
   <img src="./images/home/ホーム素材_作品.png" onclick="sakuhin()" id="menu_text">
   <img src="./images/home/ホーム素材_お知らせ.png" onclick="oshirase()" id="menu_text">
-  <h1 onclick="menu_out()" id="menu_out">
-    ✕
-  </h1>
+  <h1 onclick="menu_out()" id="menu_out">✕</h1>
 </div>
 
 <div id="background">
