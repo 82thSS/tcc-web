@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
   }
 
   a
@@ -96,6 +97,39 @@
       border-bottom: 2px solid black;
     }
 
+    #han_group{
+      height: 40vh;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      display: flex;
+      margin: 4vh 12vw 4vh 12vw;
+      background-image: url("images/home/ホーム背景1.png");
+      transition: .4s;
+      cursor: pointer;
+    }
+
+    #han_group:hover{
+      transform: scale(1.05,1.05);
+    }
+
+    /* #han_img{
+      border-right: solid .4vw #4a4a4a;
+    } */
+
+    #han_txt_group{
+      text-align: center;
+      margin: auto;
+    }
+
+    #han_title{
+      margin: 0px auto 0px auto;
+    }
+
+    #han_txt{
+      text-align: center;
+      font-size: 1.5vw;
+    }
+
     footer {
       height: 40vh;
       background-color: #404040;
@@ -126,6 +160,43 @@
       display: none;
     }
 
+    #han_group{
+      width: 80vw;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      display: flex;
+      margin: 2vh auto 2vh auto;
+      background-color: white;
+      transition: .4s;
+      cursor: pointer;
+      background-image: url("images/home/ホーム背景1.png");
+    }
+
+    #han_group:hover{
+      transform: scale(1.05,1.05);
+    }
+
+    /* #han_img{
+      border-right: solid .4vw #4a4a4a;
+      width: 50vw;
+    } */
+
+    #han_txt_group{
+      text-align: center;
+      margin: auto;
+    }
+
+    #han_title{
+      margin: 2vh auto 0px auto;
+      width: 90%;
+    }
+
+    #han_txt{
+      text-align: center;
+      font-size: 3vw;
+      margin: auto 2vw 2vh 2vw;
+    }
+
     #footer {
       height: 40vh;
       background-color: #404040;
@@ -153,49 +224,6 @@
     #footer_link{
       color: white;
     }
-  }
-
-  #han_group
-  {
-    border: solid #4a4a4a .4vw;
-    box-shadow: .5vw .5vw .25vw;
-    display: flex;
-    margin: 4vh 12vw 4vh 12vw;
-    background-color: white;
-    transition: .4s;
-    cursor: pointer;
-  }
-
-  #han_group:hover
-  {
-    transform: scale(1.05,1.05);
-  }
-
-  #han_img_left
-  {
-    border-right: solid .4vw #4a4a4a;
-  }
-
-  #han_img_right
-  {
-    border-left: solid .4vw #4a4a4a;
-  }
-
-  #han_txt_group
-  {
-    text-align: center;
-    margin: auto;
-  }
-
-  #han_title
-  {
-    margin: 0px auto 0px auto;
-  }
-
-  #han_txt
-  {
-    text-align: center;
-    font-size: 1.5vw;
   }
 </style>
 
@@ -270,37 +298,28 @@
 <div id="background">
 
 <div id="han_group" onclick="han_proglamming()">
-  <img src="./images/activities/プログラミング班.png" width="50%" height="auto" id="han_img_left">
+  <!-- <img src="./images/activities/プログラミング班.png" id="han_img"> -->
   <div id="han_txt_group">
-    <img src="./images/activities/活動内容素材_プログラミング班.png" width="70%" height="70%" id="han_title">
-    <p id="han_txt">この班は主にゲームやソフトウェアなどのプログラミングを行います。
-    <br>PythonやC#を始め、C++やJavaScriptなど幅広い言語を扱っています。
-    <br>桐朋祭では、例年部員が作成したゲームを展示しており
-    <br>誰でもプレイすることができます。
+    <img src="./images/activities/活動内容素材_プログラミング班.png" id="han_title">
+    <p id="han_txt">ゲームやソフトウェア、Webサイトなどのプログラミングを行います。PythonやC#を初めとする幅広い言語を扱っています。桐朋祭では、例年部員が作成したゲームをプレイすることができます。
     </p>
   </div>
 </div>
 
 <div id="han_group" onclick="han_sound()">
+  <!-- <img src="./images/activities/サウンド班.png" id="han_img"> -->
   <div id="han_txt_group">
-    <img src="./images/activities/活動内容素材_サウンド班.png" width="50%" height="auto" id="han_title">
-    <p id="han_txt">この班は主にDTMで作曲などを行います。
-    <br>作曲に限らず、リミックスやアレンジなども行います。
-    <br>桐朋祭では、例年部員が作った曲を展示部屋の
-    <br>バックグラウンドとしてスピーカーで再生します。
+    <img src="./images/activities/活動内容素材_サウンド班.png" id="han_title">
+    <p id="han_txt">DTMで作曲などを行います。作曲だけでなく、他にリミックスやアレンジなども行います。桐朋祭では、例年部員が作った曲を展示部屋のバックグラウンドとしてスピーカーで再生します。
     </p>
   </div>
-  <img src="./images/activities/サウンド班.png" width="34%" height="auto" id="han_img_right">
 </div>
 
 <div id="han_group" onclick="han_graphic()">
-  <img src="./images/activities/グラフィック班.png" width="45%" height="auto" id="han_img_left">
+  <!-- <img src="./images/activities/グラフィック班.png" id="han_img"> -->
   <div id="han_txt_group">
-    <img src="./images/activities/活動内容素材_グラフィック班.png" width="60%" height="auto" id="han_title">
-    <p id="han_txt">この班は主にPCで絵を描きます。
-      <br>部室にはペンタブや液タブが常備されています。
-      <br>桐朋祭では、例年部員が描いた絵を印刷し
-      <br>専用スペースに展示します。
+    <img src="./images/activities/活動内容素材_グラフィック班.png" id="han_title">
+    <p id="han_txt">PC上、つまりデジタルの絵を描きます。部室にはペンタブや液タブが常備されています。桐朋祭では、例年部員が描いた絵を印刷し専用スペースに展示します。絶賛人員不足です。
     </p>
   </div>
 </div>

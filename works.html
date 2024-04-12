@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
   }
 
   a
@@ -22,10 +23,11 @@
     margin: auto;
   }
 
-  #rogo
-  {
+  #rogo {
     text-align: center;
     margin: auto auto auto 5vw;
+    width: auto;
+    height: 80%;
   }
 
   #menu{
@@ -34,19 +36,28 @@
 
   #menu_text_group{
     display: none;
-    text-align: center;
+    height: 88vh;
+    background-size: cover;
+    background-image: url(./images/MUNU背景.png);
   }
 
   #menu_text{
-    margin-top: 6vh;
+    margin: 6vh auto 0 auto;
     color: black;
     display: block;
-    font-size: 20px;
+    height: 6vh;
+    width: auto;
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    background-color: white;
+    padding: 2vw;
   }
 
   #menu_out{
-    font-size: 30px;
-    margin-top: 6vh;
+    height: 4vh;
+    width: auto;
+    margin: 6vh auto 0 auto;
+    display: block;
   }
 
   #background
@@ -85,6 +96,45 @@
       border-bottom: 2px solid black;
     }
 
+    #sakuhin{
+      width: 30vw;
+      height: 54vh;
+      text-align: center;
+      font-size: 1.6vw;
+      margin: 20px;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      background-color: white;
+      cursor: pointer;
+      transition: .4s;
+      overflow-y: hidden;
+    }
+
+    #sakuhin:hover{
+      transform: scale(1.05,1.05);
+    }
+
+    #sakuhin_2group{
+      display: flex;
+      justify-content: center;
+    }
+
+    #sakuhin_text{
+      margin: 1vh 2vw 2vh 2vw;
+    }
+
+    #sakuhin_title{
+      text-align: center;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      background-color: white;
+      margin: auto 5vw 4vh 5vw;
+    }
+
+    #sakuhin_title_img{
+      margin: 1vh 2vw;
+    }
+
     footer {
       height: 40vh;
       background-color: #404040;
@@ -115,6 +165,46 @@
       display: none;
     }
 
+    #sakuhin{
+      width: 40vw;
+      height: 30vh;
+      text-align: center;
+      font-size: 1.6vw;
+      margin: 20px;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      background-color: white;
+      cursor: pointer;
+      transition: .4s;
+      overflow-y: hidden;
+    }
+
+    #sakuhin:hover{
+      transform: scale(1.05,1.05);
+    }
+
+    #sakuhin_2group{
+      display: flex;
+      justify-content: center;
+    }
+
+    #sakuhin_text{
+      font-size: 3.6vw;
+      margin: 1vh 2vw 2vh 2vw;
+    }
+
+    #sakuhin_title{
+      text-align: center;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      background-color: white;
+      margin: auto 5vw 4vh 5vw;
+    }
+
+    #sakuhin_title_img{
+      margin: 1vh 2vw;
+    }
+
     #footer {
       height: 40vh;
       background-color: #404040;
@@ -142,84 +232,6 @@
     #footer_link{
       color: white;
     }
-  }
-
-  #sakuhin
-  {
-    width: 30vw;
-    height: 54vh;
-    text-align: center;
-    font-size: 1.6vw;
-    margin: 20px;
-    border: solid #4a4a4a .4vw;
-    box-shadow: .5vw .5vw .25vw;
-    background-color: white;
-    cursor: pointer;
-    transition: .4s;
-    overflow-y: hidden;
-  }
-
-  #sakuhin:hover
-  {
-    transform: scale(1.05,1.05);
-  }
-
-  #sakuhin_2group
-  {
-    display: flex;
-    justify-content: center;
-  }
-
-  #sakuhin_text
-  {
-    margin: 1vh auto 2vh auto;
-  }
-
-  #sakuhin_title
-  {
-    text-align: center;
-    border: solid #4a4a4a .4vw;
-    box-shadow: .5vw .5vw .25vw;
-    background-color: white;
-    margin: auto 5vw 4vh 5vw;
-  }
-
-  #sakuhin_title_img
-  {
-    margin: 1vh 2vw;
-  }
-
-  footer
-  {
-    height: 40vh;
-    background-color: #404040;
-    display: flex;
-    color: white;
-    font-size: 2vw;
-  }
-
-  #footer_rogo
-  {
-    display: block;
-    margin: auto 5vw;
-  }
-
-  #footer_text
-  {
-    margin: auto 4vw auto 8vw;
-    font-size: 1.2vw;
-  }
-
-  a
-  {
-    color: white;
-  }
-
-  #footer_copyright
-  {
-    font-size: 1vw;
-    text-align: right;
-    margin: auto 1vw 1vh auto;
   }
 </style>
 
@@ -278,6 +290,7 @@
 <body>
   <header>
     <img src="images/tccロゴ.png" width="150vw" height="auto" id="rogo">
+    <img src="./images/home/ホーム素材_MENU.png" id="menu" onclick="menu()"/>
     <div id="header_button_group">
       <input type="submit" value="ホーム" id="header_button" onclick="home()">
       <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
@@ -304,17 +317,13 @@
 <div id="sakuhin_2group">
   <div id="sakuhin" onclick="sakuhin_RB()">
     <img src="images/works/RB素材1.png" width="100%" height="auto">
-    <p id="sakuhin_text">2023年に展示された格闘ゲーム
-    <br>7種のキャラクターの中から選び
-    <br>人間またはCPUと対戦する
+    <p id="sakuhin_text">2023年に展示された格闘ゲーム。7種のキャラクターの中から選び、人間またはCPUと対戦する
     </p>
   </div>
   
   <div id="sakuhin" onclick="sakuhin_yokerugame()">
     <img src="images/works/よけるげーむ素材1.png" width="100%" height="auto">
-    <p id="sakuhin_text">2023年に展示された避けゲー
-    <br>3Dの空間で向こうから迫りくる
-    <br>障害物を避けていく
+    <p id="sakuhin_text">2023年に展示された避けゲー。3Dの空間で向こうから迫りくる障害物を避けていく
     </p>
   </div>
 </div>
@@ -322,17 +331,13 @@
 <div id="sakuhin_2group">
   <div id="sakuhin" onclick="sakuhin_SM()">
     <img src="images/works/SM素材1.png" width="100%" height="auto">
-    <p id="sakuhin_text">2023年に展示されたゲーム集
-    <br>スイッチをテーマにしたゲームを
-    <br>6種類遊ぶことができる。
+    <p id="sakuhin_text">2023年に展示されたゲーム集。スイッチをテーマにした6種類のゲームを遊ぶことができる。
     </p>
   </div>
   
   <div id="sakuhin" onclick="sakuhin_PP()">
     <img src="images/works/PP素材1.png" width="100%" height="auto">
-    <p id="sakuhin_text">2023年に展示された卓球ゲーム
-    <br>ラケットに見立てたバーで
-    <br>相手と対戦する。
+    <p id="sakuhin_text">2023年に展示された卓球ゲーム。ラケットに見立てたバーで相手と対戦する。
     </p>
   </div>
 </div>
@@ -340,8 +345,8 @@
 </div>
 
 <body>
-  <footer>
-    <img src="images/フッター素材.png" width="auto" height="24%" id="footer_rogo">
+  <footer id="footer">
+    <img src="images/フッター素材.png" id="footer_rogo">
     <div id="footer_text">
       <p>住所：東京都国立市中3-1-10 
       <br>@コンピューター部器具庫
@@ -352,7 +357,5 @@
       <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank" id="footer_link">いらすとや</a>
       <br>サイト管理者：82th.S.S</p>
     </div>
-    <p id="footer_copyright">CopyRight© 桐朋コンピューター部
-    <br>CopyRight© TOHO_Computer_Club</p>
   </footer>
 </body>
