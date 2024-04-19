@@ -2,12 +2,15 @@
 <meta charset="UTF-8">
 <meta charset="UTF-8">
 <meta charset="UTF-8">
+<meta charset="UTF-8">
+<meta charset="UTF-8">
 <style>
-  *
+*
   {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    font-family: sans-serif;
   }
 
   header
@@ -19,39 +22,41 @@
     margin: auto;
   }
 
-  #header_button_group
-  {
-    margin: auto 5vw auto auto;
-  }
-
-  #header_button
-  {
-    background-color: white;
-    border-color: transparent;
-    font-size: 1.4vw;
-    padding-bottom: 1.2vh;
-    padding-top: 1.2vh;
-    transition: .4s;
-    border-left: .15vw solid black;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    cursor: pointer;
-  }
-
-  #header_button:hover
-  {
-    border-bottom: .15vw solid black;
-  }
-
-  #header_twitter:hover
-  {
-    border-bottom: 2px solid black;
-  }
-
-  #rogo
-  {
+  #rogo {
     text-align: center;
     margin: auto auto auto 5vw;
+    width: auto;
+    height: 80%;
+  }
+
+  #menu{
+    margin: 0 0 0 auto;
+  }
+
+  #menu_text_group{
+    display: none;
+    height: 88vh;
+    background-size: cover;
+    background-image: url(../images/MUNU背景.png);
+  }
+
+  #menu_text{
+    margin: 6vh auto 0 auto;
+    color: black;
+    display: block;
+    height: 6vh;
+    width: auto;
+    border: solid #4a4a4a .4vw;
+    box-shadow: .5vw .5vw .25vw;
+    background-color: white;
+    padding: 2vw;
+  }
+
+  #menu_out{
+    height: 4vh;
+    width: auto;
+    margin: 6vh auto 0 auto;
+    display: block;
   }
 
   #background
@@ -59,80 +64,167 @@
     background-image: url("../images/背景.png");
   }
 
-  #explan
-  {
-    border: solid #4a4a4a .4vw;
-    box-shadow: .5vw .5vw .25vw;
-    margin: 4vh auto 8vh auto;
-    width: 60%;
-    background-color: white;
-    padding: 20px;
-  }
-
-  #explan_title
-  {
-    margin-bottom: 2vw;
-  }
-
-  #explan_text
-  {
-    line-height: 8vh;
-    font-size: 1.4vw;
-  }
-
-  #explan_img
-  {
-    margin: auto 0 8vh 12vw;
-    text-align: center;
-  }
-
-  h1
+  #text_title
   {
     padding: 2vh 2vw;
     border-left: .2vw solid;
     margin: 2vh auto .4vh 0;
   }
 
-  footer
-  {
-    height: 40vh;
-    background-color: #404040;
-    display: flex;
+  #explan_img_text{
+    opacity: 0.8;
+  }
+
+  @media screen and (min-width : 1100px) /*パソコン画面*/ {
+    #menu{
+      display: none;
+    }
+
+    #header_button_group {
+      margin: auto 20px auto auto;
+    }
+
+    #header_button {
+      background-color: white;
+      border-color: transparent;
+      font-size: 20px;
+      padding-bottom: 1%;
+      padding-top: 1%;
+      transition: 0.4s;
+      border-left: 2px solid black;
+      border-right: 2px solid black;
+      padding-left: 60px;
+      padding-right: 60px;
+      margin: auto 20px;
+      cursor: pointer;
+      height: 60px;
+      transition: 0.4s;
+    }
+
+    #header_button:hover{
+      border-bottom: 2px solid black;
+    }
+
+    #header_button:hover {
+      border-bottom: 0.15vw solid black;
+    }
+
+    #explan{
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      margin: 4vh auto 8vh auto;
+      width: 60%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    #explan_title{
+      margin-bottom: 2vw;
+    }
+
+    #explan_text{
+      line-height: 8vh;
+      font-size: 1.4vw;
+    }
+
+    #explan_img{
+      margin: auto 0 8vh 2vw;
+      text-align: center;
+    }
+
+    h1{
+      padding: 2vh 2vw;
+      border-left: .2vw solid;
+      margin: 2vh auto .4vh 0;
+    }
+
+    footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+      font-size: 2vw;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+      width: 14vw;
+      height: auto;
+    }
+
+    #footer_text {
+      margin: auto 4vw auto 8vw;
+      font-size: 1.2vw;
+    }
+
+    #footer_link{
     color: white;
-    font-size: 2vw;
+    }
   }
 
-  footer
-  {
-    height: 40vh;
-    background-color: #404040;
-    display: flex;
-    color: white;
-    font-size: 2vw;
-  }
+  @media screen and (max-width : 1100px) /*スマホ画面*/ {
+    #header_button_group {
+      display: none;
+    }
 
-  #footer_rogo
-  {
-    display: block;
-    margin: auto 5vw;
-  }
+    #explan{
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      margin: 4vh auto 8vh auto;
+      width: 84%;
+      background-color: white;
+      padding: 20px;
+    }
 
-  #footer_text
-  {
-    margin: auto 4vw auto 8vw;
-    font-size: 1.2vw;
-  }
+    #explan_title{
+      margin: 2vh 0;
+    }
 
-  a
-  {
-    color: white;
-  }
+    #explan_text{
+      line-height: 60px;
+      font-size: 24px;
+    }
 
-  #footer_copyright
-  {
-    font-size: 1vw;
-    text-align: right;
-    margin: auto 1vw 1vh auto;
+    #explan_img{
+      margin: auto 0 2vh 2vw;
+      text-align: center;
+    }
+
+    h1{
+      padding: 2vh 2vw;
+      border-left: .2vw solid;
+      margin: 2vh auto .4vh 0;
+      font-size: 48px;
+    }
+
+    #footer {
+      height: 40vh;
+      background-color: #404040;
+      display: flex;
+      color: white;
+      font-size: 2vw;
+    }
+
+    #footer_group{
+      display: inline;
+    }
+
+    #footer_rogo {
+      display: block;
+      margin: auto 5vw;
+      width: 20vw;
+      height: auto;
+    }
+
+    #footer_text {
+      margin: auto 2vw auto 2vw;
+      font-size: 2vw;
+    }
+
+    #footer_link {
+      color: white;
+    }
   }
 </style>
 
@@ -160,7 +252,7 @@
 
 <body>
     <header>
-      <img src="../images/tccロゴ.png" width="150vw" height="auto" id="rogo">
+      <img src="../images/../images/../images/tccロゴ.png" width="150vw" height="auto" id="rogo">
       <div id="header_button_group">
         <input type="submit" value="ホーム" id="header_button" onclick="home()">
         <input type="submit" value="活動内容" id="header_button" onclick="naiyou()">
@@ -183,9 +275,15 @@
     <br>避けることができます。
     <br>黄色いの横棒に触れるとクリアとなり、HPが無くなるとゲームオーバーです。
     </p>
-    <img src="../images/works/よけるげーむ素材3.png" width="20%" height="auto">
-    <img src="../images/works/よけるげーむ素材4.png" width="20%" height="auto">
-    <img src="../images/works/よけるげーむ素材5.png" width="20%" height="auto">
+    <img src="../images/works/よけるげーむ素材3.png" width="75%" height="auto">
+    <p id="explan_img_text">レベル選択画面</p>
+    <br>
+    <img src="../images/works/よけるげーむ素材4.png" width="75%" height="auto">
+    <p id="explan_img_text">プレイ画面</p>
+    <br>
+    <img src="../images/works/よけるげーむ素材5.png" width="75%" height="auto">
+    <p id="explan_img_text">ゲームオーバー画面</p>
+    <br>
     <br><br>
     <h1>レベル</h1>
     <p id="explan_text">このゲームにはイージー、ノーマル、ハード、ルナティックの
@@ -199,19 +297,17 @@
 </body>
 
 <body>
-    <footer>
-      <img src="../images/フッター素材.png" width="auto" height="24%" id="footer_rogo">
-      <div id="footer_text">
-        <p>住所：東京都国立市中3-1-10 
-        <br>@コンピューター部器具庫
-        <br><a href="https://twitter.com/tcca_main" target="_blank">TCC公式Twitter</a>
-      </div>
-      <div id="footer_text">
-        <p>背景画像提供：<a href="https://sozaino.site/" target="_blank">OKUMONO</a>
-        <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank">いらすとや</a>
-        <br>サイト管理者：82th.S.S</p>
-      </div>
-      <p id="footer_copyright">CopyRight© 桐朋コンピューター部
-      <br>CopyRight© TOHO_Computer_Club</p>
-    </footer>
-  </body>
+  <footer id="footer">
+    <img src="../images/フッター素材.png" id="footer_rogo">
+    <div id="footer_text">
+      <p>住所：東京都国立市中3-1-10 
+      <br>@コンピューター部器具庫
+      <br><a href="https://twitter.com/tcca_main" target="_blank" id="footer_link">TCC公式Twitter</a>
+    </div>
+    <div id="footer_text">
+      <p>背景画像提供：<a href="https://sozaino.site/" target="_blank" id="footer_link">OKUMONO</a>
+      <br>イメージ画像提供：<a href="https://www.irasutoya.com/" target="_blank" id="footer_link">いらすとや</a>
+      <br>サイト管理者：82th.S.S</p>
+    </div>
+  </footer>
+</body>
