@@ -98,7 +98,6 @@
 
     #sakuhin{
       width: 30vw;
-      height: 54vh;
       text-align: center;
       font-size: 1.6vw;
       margin: 20px;
@@ -167,7 +166,6 @@
 
     #sakuhin{
       width: 40vw;
-      height: 30vh;
       text-align: center;
       font-size: 1.6vw;
       margin: 20px;
@@ -278,11 +276,13 @@
 
   function menu(){
     document.getElementById("background").style.display="none";
+    document.getElementById("footer").style.display="none";
     document.getElementById("menu_text_group").style.display="block";
   }
 
   function menu_out(){
     document.getElementById("background").style.display="block";
+    document.getElementById("footer").style.display="flex";
     document.getElementById("menu_text_group").style.display="none";
   }
 </script>
@@ -323,7 +323,7 @@
   
   <div id="sakuhin" onclick="sakuhin_yokerugame()">
     <img src="images/works/よけるげーむ素材1.png" width="100%" height="auto">
-    <p id="sakuhin_text">2023年に展示された避けゲー。3Dの空間で向こうから迫りくる障害物を避けていく
+    <p id="sakuhin_text">2023年に展示された避けゲー。3Dの空間で向こうから迫りくる障害物を避けていく｡
     </p>
   </div>
 </div>
