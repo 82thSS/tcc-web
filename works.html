@@ -127,7 +127,15 @@
       border: solid #4a4a4a .4vw;
       box-shadow: .5vw .5vw .25vw;
       background-color: white;
-      margin: auto 5vw 4vh 5vw;
+      margin: auto 10vw 4vh 10vw;
+    }
+
+    #sakuhin_title_2023{
+      text-align: center;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      background-color: white;
+      margin: 10vh 5vw 4vh 5vw;
     }
 
     #sakuhin_title_img{
@@ -192,6 +200,14 @@
     }
 
     #sakuhin_title{
+      text-align: center;
+      border: solid #4a4a4a .4vw;
+      box-shadow: .5vw .5vw .25vw;
+      background-color: white;
+      margin: auto 4vw 4vh 4vw;
+    }
+
+    #sakuhin_title_2023{
       text-align: center;
       border: solid #4a4a4a .4vw;
       box-shadow: .5vw .5vw .25vw;
@@ -274,6 +290,31 @@
     window.location.href="works/pp.html";
   }
 
+  function sakuhin_ST()
+  {
+    window.location.href="works/st.html";
+  }
+
+  function sakuhin_RB2()
+  {
+    window.location.href="works/rb2.html";
+  }
+
+  function sakuhin_music1()
+  {
+    window.location.href="works/music1.html";
+  }
+
+  function sakuhin_music2()
+  {
+    window.location.href="works/music2.html";
+  }
+
+  function sakuhin_music3()
+  {
+    window.location.href="works/music3.html";
+  }
+
   function menu(){
     document.getElementById("background").style.display="none";
     document.getElementById("footer").style.display="none";
@@ -311,6 +352,52 @@
 <div id="background">
 
 <div id="sakuhin_title">
+  <img src="images/works/2024年度桐朋祭展示作品.png" width="95%" height="auto" id="sakuhin_title_img">
+</div>
+
+<div id="sakuhin_2group">
+  <div id="sakuhin" onclick="sakuhin_ST()">
+    <img src="images/works/ST素材1.png" width="100%" height="auto">
+    <p id="sakuhin_text">対戦型の弾幕シューティングゲーム。1Pと2Pに分かれ最大2人でプレイすることができる。
+    </p>
+  </div>
+  
+  <div id="sakuhin" onclick="sakuhin_RB2()">
+    <img src="images/works/RB2素材1.png" width="100%" height="auto">
+    <p id="sakuhin_text">2023年に展示された格闘ゲームのリメイク。1Pと2Pに分かれての対戦とCPUとの対戦ができる。
+    </p>
+  </div>
+</div>
+
+<div id="sakuhin_2group">
+  <div id="sakuhin" onclick="sakuhin_music1()">
+    <img src="images/works/サウンド素材.png" width="100%" height="auto">
+    <p id="sakuhin_text">サックスをメインとしたジャズ風の曲。
+    </p>
+  </div>
+  
+  <div id="sakuhin" onclick="sakuhin_music2()">
+    <img src="images/works/サウンド素材.png" width="100%" height="auto">
+    <p id="sakuhin_text">電子楽器をメインの楽器とした中国風の曲。
+    </p>
+  </div>
+</div>
+
+<div id="sakuhin_2group">
+  <div id="sakuhin" onclick="sakuhin_music3()">
+    <img src="images/works/サウンド素材.png" width="100%" height="auto">
+    <p id="sakuhin_text">東方Projectの楽曲をイメージした曲。
+    </p>
+  </div>
+  
+  <div id="sakuhin" onclick="sakuhin_PP()">
+    <img src="images/works/サウンド素材.png" width="100%" height="auto">
+    <p id="sakuhin_text">電子楽器をメインの楽器とした中国風の曲。
+    </p>
+  </div>
+</div>
+
+<div id="sakuhin_title_2023">
   <img src="images/works/作品素材_タイトル.png" width="95%" height="auto" id="sakuhin_title_img">
 </div>
 
